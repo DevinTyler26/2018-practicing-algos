@@ -1,4 +1,4 @@
-const reverseArrayInSpace = (arr) => {
+const reverseArrayInPlace = (arr) => {
   let j = arr.length-1;
   for (i = 0; i < arr.length / 2; i++, j--){
     temp = arr[i];
@@ -11,5 +11,5 @@ const reverseArrayInSpace = (arr) => {
 arr = [1, 2, 3, 4, 5]
 arr2 = [1, 2, 3, 4]
 
-reverseArrayInSpace(arr)
-reverseArrayInSpace(arr2)
+reverseArrayInPlace(arr)
+reverseArrayInPlace(arr2)
