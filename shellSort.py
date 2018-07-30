@@ -5,6 +5,16 @@ def shellSort(arr):
   gap = n//2
 
   # while gap is greater than 0, do this logic
+  #  V          V             Don't swap
+  # [19,2,31,45,30,11,121,27] 
+  #     V          V          Don't swap
+  # [19,2,31,45,30,11,121,27]
+  #        V          V       Don't swap
+  # [19,2,31,45,30,11,121,27]
+  #           V            V  Swap
+  # [19,2,31,45,30,11,121,27]
+  #           V            V  Swap
+  # [19,2,31,27,30,11,121,45]
   while gap > 0:
     
     for i in range(gap, n):
