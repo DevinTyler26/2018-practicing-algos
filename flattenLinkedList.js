@@ -28,7 +28,7 @@ testList.insertAtEnd(3);
 testList.insertAtEnd(4);
 testList.insertAtEnd(5);
 testList.insertAtEnd(6);
-testList.insertChild(2, 9;)
+testList.insertChild(2, 9);
 
 console.log(testList)
 
