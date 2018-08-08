@@ -24,7 +24,7 @@ const isPerm = (str1, str2) => {
   return perm;
 }
 
-string1 = ['d','o','g',]
+string1 = ['d','o','g']
 string2 = ['g','o','d']
 
 isPerm(string1, string2)
