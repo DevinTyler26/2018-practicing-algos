@@ -1,3 +1,6 @@
+arr = [1,2,4,5,6,7,9]
+arr2 = [2,54,4,5,7,6,1,9,8,11]
+
 const consecutive = (arr) => {
   let n = arr.length;
   map = {};
@@ -5,7 +8,7 @@ const consecutive = (arr) => {
     map[arr[i]] = arr[i]
   }
 
-  let count = [];
+  let count = 0;
 
   for (let keys in map){
     if(map[keys - 1]) continue;
@@ -15,13 +18,10 @@ const consecutive = (arr) => {
       length += 1
       k++
     }
-    count.push(length);
+    if (count < length) count = length;
   }
-  return Math.max(...count);
+  return count;
 }
-
-arr = [1, 2, 4, 5, 6, 7, 9];
-arr2 = [2, 54, 4, 5, 7, 6, 1, 9, 8, 11];
 
 console.log(consecutive(arr))
 console.log(consecutive(arr2))
