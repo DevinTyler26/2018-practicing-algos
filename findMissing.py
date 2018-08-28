@@ -1,8 +1,9 @@
 list = [1,3,4,5,3,7,2,9]
 def findMissing(nums):
+  n = len(nums)
+  if n == 0 : return []
   maxx = max(nums)
   minn = min(nums)
-  n = len(nums)
   dictionary = {}
   missing = []
 
@@ -17,7 +18,7 @@ def findMissing(nums):
 
   for key in dictionary:
     missing.append(key)
-  
+
   print(missing)
 
 findMissing(list)
