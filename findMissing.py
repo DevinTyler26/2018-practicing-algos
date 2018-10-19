@@ -9,12 +9,10 @@ def findMissing(nums):
 
   for i in range(minn, maxx+1):
     dictionary[i] = True
-  print(dictionary)
 
   for i in range(0, n):
     if nums[i] in dictionary : 
       del dictionary[nums[i]]
-  print(dictionary)
 
   for key in dictionary:
     missing.append(key)
