@@ -39,3 +39,10 @@ console.log(arr);
 
 bubbleSortReverse(arr);
 console.log(arr);
+
+
+
+$("#1").attr(data-crystalValue, crystal1)
+$("#2").attr(data-crystalValue, crystal2)
+$("#3").attr(data-crystalValue, crystal3)
+$("#4").attr(data-crystalValue, crystal4)
