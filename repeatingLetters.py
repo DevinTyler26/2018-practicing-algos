@@ -1,4 +1,4 @@
-string = "Lets see how many characters are repeated"
+string = "Lets see how many characters are repeated .       "
 
 
 def repeat(string):
@@ -16,11 +16,11 @@ def mostRepeated(dict):
     highestValue = 0
     letter = ''
     for key in dict:
-        if dict[key] > highestValue:
-            if dict[key] is not ' ':
+        if key is not ' ':
+            if dict[key] > highestValue:
                 highestValue = dict[key]
                 letter = key
-    print(letter, highestValue)
+    print('HIGHEST ', letter, highestValue)
 
 
 repeat(string)
